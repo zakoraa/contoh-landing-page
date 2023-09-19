@@ -16,13 +16,51 @@
   border-color: white;
 }
 
+.img-sejarah {
+  width: 50vw;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  transition: filter 0.3s ease-in-out;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Warna latar belakang overlay (gelap) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-overlay p {
+  color: #fff; /* Warna teks pada overlay */
+  text-align: center;
+}
+
+.image-container:hover img {
+  filter: brightness(70%); /* Gambar menjadi sedikit gelap saat dihover */
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1; /* Overlay muncul saat dihover */
+}
+
 @media (max-width: 994px) {
   .header {
     height: 40vh;
     width: 100vw;
   }
-}
-
-.img-sejarah {
-  width: 50vw;
 }
