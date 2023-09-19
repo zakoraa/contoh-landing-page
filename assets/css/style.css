@@ -1,0 +1,28 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  height: 100vh;
+  background: url("/assets/images/header-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+.header hr {
+  border-width: 2px;
+  border-color: white;
+}
+
+@media (max-width: 994px) {
+  .header {
+    height: 40vh;
+    width: 100vw;
+  }
+}
+
+.img-sejarah {
+  width: 50vw;
+}
