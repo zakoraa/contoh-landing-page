@@ -2,6 +2,24 @@
   font-family: "Poppins", sans-serif;
 }
 
+#navbar {
+  background-color: transparent;
+  transition: background-color 0.5s;
+}
+
+#navbar a {
+  color: white;
+}
+
+#navbar.navbar-scroll {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 3);
+}
+
+#navbar.navbar-scroll a {
+  color: black;
+}
+
 .header {
   height: 100vh;
   background: url("/assets/images/header-img.jpg");
@@ -25,10 +43,10 @@
   overflow: hidden;
 }
 
-.image-container img {
+.zoom-image {
   max-width: 100%;
   height: auto;
-  transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .image-overlay {
@@ -50,8 +68,9 @@
   text-align: center;
 }
 
-.image-container:hover img {
+.image-container:hover .zoom-image {
   filter: brightness(70%); /* Gambar menjadi sedikit gelap saat dihover */
+  transform: scale(1.1); /* Efek zoom saat dihover (dalam contoh ini, gambar akan diperbesar 10%) */
 }
 
 .image-container:hover .image-overlay {

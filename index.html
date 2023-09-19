@@ -14,21 +14,22 @@
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
       <div class="container">
-        <a class="navbar-brand text-white fs-2 text-bold" href="#">Nusantara</a>
-        <button class="navbar-toggler bg-white text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand fs-2 text-bold" href="#">Nusantara</a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link mx-3 active text-white" aria-current="page" href="#">Home</a>
-            <a class="nav-link mx-3 text-white" href="#">Features</a>
-            <a class="nav-link mx-3 text-white" href="#">Pricing</a>
+            <a class="nav-link mx-3 active" aria-current="page" href="#">Home</a>
+            <a class="nav-link mx-3" href="#">Features</a>
+            <a class="nav-link mx-3" href="#">Pricing</a>
           </div>
         </div>
       </div>
     </nav>
+
     <!-- Navbar End -->
 
     <!-- Header Start -->
@@ -69,59 +70,65 @@
     <!-- Section 1 End-->
 
     <!-- Section 2 Start -->
-    <section class="bg-secondary-subtle py-5 shadow-sm">
+    <section class="bg-dark py-5">
       <div class="container">
         <div>
-          <h2>Tempat Wisata di Candi Borobudur</h2>
+          <h2 class="text-white">Tempat Wisata di Candi Borobudur</h2>
           <p class="text-secondary">Ayo jelajahi tempat-tempat yang menarik!</p>
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="card bg-transparent border-0 mb-md-3 image-container">
-              <img src="assets/images/taman_wisata.jpg" alt="taman" />
-              <div class="image-overlay">
-                <p>Text yang muncul di tengah gambar</p>
+              <img src="assets/images/taman_wisata.jpg" class="zoom-image" alt="taman" />
+              <div class="image-overlay flex-column">
+                <p>Taman Wisata Candi Borobudur</p>
+                <p>⭐ 4.6</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="card bg-transparent border-0 image-container mb-md-3">
-              <img src="assets/images/svarga.jpg" alt="svarga" />
-              <div class="image-overlay">
-                <p>Text yang muncul di tengah gambar</p>
+              <img src="assets/images/svarga.jpg" class="zoom-image" alt="svarga" />
+              <div class="image-overlay flex-column">
+                <p>Svargabumi Borobudur</p>
+                <p>⭐ 4.9</p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="card bg-transparent border-0 image-container mb-md-3">
-              <img src="assets/images/ayam.jpg" alt="ayam" />
-              <div class="image-overlay">
-                <p>Text yang muncul di tengah gambar</p>
+              <img src="assets/images/ayam.jpg" class="zoom-image" alt="ayam" />
+              <div class="image-overlay flex-column">
+                <p>Bukit Rhema Gereja Ayam</p>
+                <p>⭐ 4.8</p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="card bg-transparent border-0 image-container">
-              <img src="assets/images/bukit_barede.jpg" alt="bukit" />
-              <div class="image-overlay">
-                <p>Text yang muncul di tengah gambar</p>
+              <img src="assets/images/bukit_barede.jpg" class="zoom-image" alt="bukit" />
+              <div class="image-overlay flex-column">
+                <p>Bukit Barede</p>
+                <p>⭐ 4.2</p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="card border-0 image-container bg-transparent">
-              <img src="assets/images/candi_mendut.jpg" alt="candi" />
-              <div class="image-overlay">
-                <p>Text yang muncul di tengah gambar</p>
+              <img src="assets/images/candi_mendut.jpg" class="zoom-image" alt="candi" />
+              <div class="image-overlay flex-column">
+                <p>Candi Mendut</p>
+                <p>⭐ 4.6</p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="card border-0 image-container bg-transparent">
-              <img src="assets/images/bukit_dagi.jpg" alt="dagi" />
-              <div class="image-overlay">
-                <p>Text yang muncul di tengah gambar</p>
+              <img src="assets/images/bukit_dagi.jpg" class="zoom-image" alt="dagi" />
+              <div class="image-overlay flex-column">
+                <p>Bukit Dagi</p>
+                <p>⭐ 4.6</p>
               </div>
             </div>
           </div>
@@ -129,5 +136,6 @@
       </div>
     </section>
     <!-- Section 2 End -->
+    <script src="assets/js/navbar.js"></script>
   </body>
 </html>
