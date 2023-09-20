@@ -2,7 +2,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-section{
+section {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -10,8 +10,19 @@ section{
 }
 
 #navbar {
+  color: white;
   background-color: transparent;
   transition: background-color 0.5s;
+}
+
+#navbar a {
+  border-radius: 5px;
+}
+
+#navbar a:hover {
+  border-radius: 5px;
+  background-color: rgb(21, 21, 21);
+  color: white;
 }
 
 #navbar a {
@@ -20,11 +31,15 @@ section{
 
 #navbar.navbar-scroll {
   background-color: white;
+  color: black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 3);
 }
 
 #navbar.navbar-scroll a {
   color: black;
+}
+#navbar.navbar-scroll a:hover {
+  color: white;
 }
 
 .header {
@@ -62,7 +77,7 @@ section{
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Warna latar belakang overlay (gelap) */
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,17 +86,17 @@ section{
 }
 
 .image-overlay p {
-  color: #fff; /* Warna teks pada overlay */
+  color: #fff;
   text-align: center;
 }
 
 .image-container:hover .zoom-image {
-  filter: brightness(70%); /* Gambar menjadi sedikit gelap saat dihover */
-  transform: scale(1.1); /* Efek zoom saat dihover (dalam contoh ini, gambar akan diperbesar 10%) */
+  filter: brightness(70%);
+  transform: scale(1.1);
 }
 
 .image-container:hover .image-overlay {
-  opacity: 1; /* Overlay muncul saat dihover */
+  opacity: 1;
 }
 
 @media (max-width: 994px) {
