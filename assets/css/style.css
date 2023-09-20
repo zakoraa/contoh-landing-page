@@ -113,19 +113,34 @@ section {
   opacity: 1;
 }
 
-.col-card{
+.col-card {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#relief p{
+#relief p {
   font-size: 14px;
 }
 
 @media (max-width: 994px) {
+  #navbar {
+    background-color: white;
+  }
+
+  #navbar div {
+    color: black;
+    font-size: 20px;
+  }
+  #navbar a {
+    color: black;
+  }
+  #navbar a:hover {
+    background-color: transparent;
+    color: black;
+  }
+
   .header {
-    height: 40vh;
-    width: 100vw;
+    font-size: 55px;
   }
 }
