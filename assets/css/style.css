@@ -58,9 +58,13 @@ section {
 
 .header {
   height: 100vh;
-  background: url("/assets/images/taman_wisata.jpg");
+  background: url("/assets/images/header-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   font-size: 70px;
   font-weight: bolder;
 }
