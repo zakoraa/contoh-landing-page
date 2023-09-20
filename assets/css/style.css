@@ -139,6 +139,9 @@ section {
     background-color: transparent;
     color: black;
   }
+  #navbar.navbar-scroll a:hover {
+    color: black;
+  }
 
   .header {
     font-size: 55px;
