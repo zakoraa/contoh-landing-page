@@ -58,7 +58,7 @@ section {
 
 .header {
   height: 100vh;
-  background: url("/assets/images/header-img.jpg");
+  background-image: url("/assets/images/header-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   font-size: 70px;
