@@ -15,6 +15,20 @@ section {
   transition: background-color 0.5s;
 }
 
+#navbar div {
+  color: white;
+}
+
+#navbar.navbar-scroll div {
+  color: black;
+}
+
+#navbar.navbar-scroll {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 3);
+}
+
 #navbar a {
   border-radius: 5px;
 }
@@ -97,6 +111,16 @@ section {
 
 .image-container:hover .image-overlay {
   opacity: 1;
+}
+
+.col-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#relief p{
+  font-size: 14px;
 }
 
 @media (max-width: 994px) {
